@@ -1,21 +1,21 @@
 import React from "react";
 import ProjectItem from "./Project/ProjectItem";
-import { Container, Navbar, Button, Row, Col } from "react-bootstrap";
-import Header from "./Layout/Header";
+import { Container, Row, Col } from "react-bootstrap";
+import CreateProjectButton from "./Project/CreateProjectButton";
 
 function Dashboard() {
   return (
     <div>
       <Container className="container-fluid">
-        <row>
+        <Row>
           <Col className="col-md-12">
             <h1 className="display-4 text-center">Projects</h1>
             <br />
-            <Button className="btn btn-lg btn-info">Create a Project</Button>
+            <CreateProjectButton />
             <br />
             <ProjectItem />
           </Col>
-        </row>
+        </Row>
       </Container>
     </div>
   );

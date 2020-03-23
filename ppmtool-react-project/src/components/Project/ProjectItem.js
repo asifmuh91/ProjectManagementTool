@@ -20,7 +20,7 @@ function ProjectItem() {
                 variant="success"
                 className="fa fa-flag-checkered pr-1"
               >
-                {" "}
+                {"  "}
                 Project Board
               </ListGroup.Item>
               <ListGroup.Item
@@ -28,7 +28,7 @@ function ProjectItem() {
                 variant="warning"
                 className="fa fa-edit pr-1"
               >
-                {" "}
+                {"  "}
                 Update Project
               </ListGroup.Item>
               <ListGroup.Item
@@ -36,7 +36,7 @@ function ProjectItem() {
                 variant="danger"
                 className="fa fa-minus-circle pr-1"
               >
-                {" "}
+                {"  "}
                 Delete Project
               </ListGroup.Item>
             </ListGroup>
