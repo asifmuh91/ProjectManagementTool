@@ -37,11 +37,11 @@ public class Project {
     @JsonFormat(pattern = "yyyy-mm-dd")
     private Date endDate;
 
-    @Column(updatable = false)
-    private Date created_At;
-
     @Column(insertable = false)
     private Date updated_At;
+
+    @Column(updatable = false)
+    private Date created_At;
 
     @PrePersist
     protected void onCreate() {
@@ -76,4 +76,22 @@ public class Project {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+
 }
