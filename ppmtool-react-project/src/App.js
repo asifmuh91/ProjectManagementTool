@@ -8,6 +8,7 @@ import AddProject from "./components/Project/AddProject";
 import { Provider } from "react-redux";
 import store from "./store";
 import UpdateProject from "./components/Project/UpdateProject";
+import DeleteProject from "./components/Project/DeleteProject";
 function App() {
   return (
     <>

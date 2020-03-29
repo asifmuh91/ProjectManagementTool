@@ -8,12 +8,12 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
-@DynamicUpdate
 @Setter
 @Getter
 public class Project {
@@ -21,7 +21,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @NotNull(message = "Project name is required")
+    @NotEmpty(message = "Project name is required")
     private String projectName;
 
     @NotNull(message = "Project Identifier is required")

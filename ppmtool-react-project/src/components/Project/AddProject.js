@@ -89,7 +89,6 @@ function AddProject(props) {
                   <div className="invalid-feedback">{errors.description}</div>
                 )}
               </Form.Group>
-              <p>{errors.description}</p>
               <Form.Group>
                 <Form.Label>Start Date</Form.Label>
                 <Form.Control
