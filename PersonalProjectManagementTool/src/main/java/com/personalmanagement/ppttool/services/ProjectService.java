@@ -1,8 +1,10 @@
 package com.personalmanagement.ppttool.services;
 
 
+import com.personalmanagement.ppttool.domain.Backlog;
 import com.personalmanagement.ppttool.domain.Project;
 import com.personalmanagement.ppttool.exceptions.ProjectUniquenessException;
+import com.personalmanagement.ppttool.repositories.BacklogRepository;
 import com.personalmanagement.ppttool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +14,26 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
+    @Autowired
+    private BacklogRepository backlogRepository;
+
     public Project saveOrUpdateProject(Project project) {
 
         try {
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+
+            if(project.getId()==null){
+                Backlog backlog = new Backlog();
+                project.setBacklog(backlog);
+                backlog.setProject(project);
+                backlog.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            }
+            else if(project.getId()!=null){
+                Backlog backlog = backlogRepository.findByProjectIdentifier(project.getProjectIdentifier());
+                project.setBacklog(backlog);
+            }
+
+
             return projectRepository.save(project);
 
         } catch (Exception e) {
@@ -28,7 +46,7 @@ public class ProjectService {
         if (project == null)
             throw new ProjectUniquenessException("Project Id " + projectId + " doesn't exist in database");
         else
-            return projectRepository.findByProjectIdentifier(projectId.toUpperCase());
+            return project;
     }
 
     public Iterable<Project> findAllProjects(){
