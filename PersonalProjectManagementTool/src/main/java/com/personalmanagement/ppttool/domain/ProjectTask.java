@@ -16,7 +16,7 @@ public class ProjectTask {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(updatable = false)
+    @Column(updatable = false, unique = true)
     private String projectSequence;
 
     @NotEmpty(message = "please include a summary")
