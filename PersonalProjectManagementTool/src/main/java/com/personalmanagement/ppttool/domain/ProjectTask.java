@@ -10,10 +10,8 @@ import java.util.Date;
 
 @Entity
 public class ProjectTask {
-
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(updatable = false, unique = true)
@@ -26,14 +24,37 @@ public class ProjectTask {
     private ProjectStatus status;
     private Integer priority;
     private Date dueDate;
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "backlog_id", updatable = false, nullable = false)
     @JsonIgnore
     private Backlog backlog;
     @Column(updatable = false)
     private String projectIdentifier;
     private Date created_At;
+
+    public Date getCreated_At() {
+        return created_At;
+    }
+
+    public Date getUpdated_At() {
+        return updated_At;
+    }
+
     private Date updated_At;
+
+    @PrePersist
+    protected void onCreate() {
+        this.created_At = new Date();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+        this.updated_At = new Date();
+    }
+
+    public Long getId() {
+        return id;
+    }
 
     public ProjectStatus getStatus() {
         return status;
@@ -99,15 +120,6 @@ public class ProjectTask {
         this.projectIdentifier = projectIdentifier;
     }
 
-    @PrePersist
-    protected void onCreate() {
-        this.created_At = new Date();
-    }
-
-    @PreUpdate
-    protected void onUpdate() {
-        this.updated_At = new Date();
-    }
 
 
 }

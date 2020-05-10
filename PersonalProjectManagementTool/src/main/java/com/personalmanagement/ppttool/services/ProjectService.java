@@ -33,7 +33,6 @@ public class ProjectService {
                 project.setBacklog(backlog);
             }
 
-
             return projectRepository.save(project);
 
         } catch (Exception e) {
