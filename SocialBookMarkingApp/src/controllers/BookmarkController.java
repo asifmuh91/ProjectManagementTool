@@ -25,4 +25,11 @@ public class BookmarkController {
         BookmarkManager.getInstance().saveUserBookmark(user,bookMark);
     }
 
+    public void setKindFriendlyStatus(User user, String kidFriendlyStatus, BookMark bookMark) {
+        BookmarkManager.getInstance().setKidFriendly(user,kidFriendlyStatus,bookMark);
+    }
+
+    public void share(User user, BookMark bookMark) {
+        BookmarkManager.getInstance().share(user,bookMark);
+    }
 }

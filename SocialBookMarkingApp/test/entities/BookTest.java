@@ -11,7 +11,7 @@ class BookTest {
     @Test
     void isKidFriendlyEligible() {
         //Test 1 : porn in url --false
-        Weblink weblink = BookmarkManager.getInstance().createWebLink(2000,"porn.db.com","db.com");
+        Weblink weblink = BookmarkManager.getInstance().createWebLink(2000,"porn.db.com","db.com","ola");
         boolean isKidFriendlyEligible = weblink.isKidFriendlyEligible();
         Assert.assertFalse(isKidFriendlyEligible);
         //test 2: porn in title --false

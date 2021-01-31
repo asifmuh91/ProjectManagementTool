@@ -1,9 +1,12 @@
 package entities;
 
+import Partner.Shareable;
+import com.sun.deploy.util.StringUtils;
+
 import java.util.Arrays;
 import java.util.Date;
 
-public class Book extends BookMark {
+public class Book extends BookMark implements Shareable {
 
     private String publicationYear;
     private String publisher;
@@ -73,5 +76,19 @@ public class Book extends BookMark {
     @Override
     public boolean isKidFriendlyEligible() {
         return false;
+    }
+
+    @Override
+    public String getItemData() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("<item>");
+        builder.append("<type><Book</type>");
+        builder.append("<title>").append(getTitle()).append("</title>");
+        builder.append("<authors>").append(StringUtils.join(Arrays.asList(authors),",")).append("<genre>");
+        builder.append("<publisher>").append(publisher).append("</publisher>");
+        builder.append("<publicationYear>").append(publicationYear).append("</publicationYear>");
+        builder.append("<publicationYear>").append(publicationYear).append("</publicationYear>");
+        builder.append("<genre>").append(genre).append("<genre>");
+        return builder.toString();
     }
 }

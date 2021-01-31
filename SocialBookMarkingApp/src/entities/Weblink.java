@@ -1,10 +1,16 @@
 package entities;
 
-public class Weblink extends BookMark {
-    public Weblink(int year, String url, String host) {
+import Partner.Shareable;
+import com.sun.deploy.util.StringUtils;
+
+import java.util.Arrays;
+
+public class Weblink extends BookMark implements Shareable {
+    public Weblink(int year, String url, String host, String title) {
         this.url = url;
         this.host = host;
         this.year = year;
+        this.setTitle(title);
     }
 
     private int year;
@@ -46,6 +52,16 @@ public class Weblink extends BookMark {
 
     @Override
     public boolean isKidFriendlyEligible() {
-        return !this.url.contains("porn") || this.getTitle().contains("porn") || this.host.contains("adult");
+        return !url.contains("porn") || getTitle().contains("porn") || host.contains("adult");
     }
-}
+    @Override
+    public String getItemData() {
+            StringBuilder builder = new StringBuilder();
+            builder.append("<item>");
+            builder.append("<type><WebLink</type>");
+            builder.append("<title>").append(getTitle()).append("</title>");
+            builder.append("<url>").append(getUrl()).append("</url>");
+            builder.append("<host>").append(getHost()).append("</host>");
+            return builder.toString();
+        }
+    }

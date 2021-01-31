@@ -7,6 +7,16 @@ public abstract class BookMark {
     private String title;
     private String profileUrl;
     private String kidFriendlyStatus = ApprovalStatus.PENDING.toString();
+    private User bookmarkBy;
+    private User shareBy;
+
+    public String getKidFriendlyStatus() {
+        return kidFriendlyStatus;
+    }
+
+    public void setKidFriendlyStatus(String kidFriendlyStatus) {
+        this.kidFriendlyStatus = kidFriendlyStatus;
+    }
 
     public long getId() {
         return id;
@@ -30,6 +40,22 @@ public abstract class BookMark {
 
     public void setProfileUrl(String profileUrl) {
         this.profileUrl = profileUrl;
+    }
+
+    public User getBookmarkBy() {
+        return bookmarkBy;
+    }
+
+    public void setBookmarkBy(User bookmarkBy) {
+        this.bookmarkBy = bookmarkBy;
+    }
+
+    public User getShareBy() {
+        return shareBy;
+    }
+
+    public void setShareBy(User shareBy) {
+        this.shareBy = shareBy;
     }
 
     public abstract boolean isKidFriendlyEligible();

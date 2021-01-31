@@ -52,11 +52,11 @@ public class DataStore {
 
     }
     private static void loadWeblinks(){
-        bookMarks[0][0]= BookmarkManager.getInstance().createWebLink(2000,"intranet.db.com","db.com");
-        bookMarks[0][1]= BookmarkManager.getInstance().createWebLink(2001,"facebook.com","fb.com");
-        bookMarks[0][2]= BookmarkManager.getInstance().createWebLink(2020,"facebook.com","fb.com");
-        bookMarks[0][3]= BookmarkManager.getInstance().createWebLink(2005,"facebook.com","fb.com");
-        bookMarks[0][4]= BookmarkManager.getInstance().createWebLink(2008,"facebook.com","fb.com");
+        bookMarks[0][0]= BookmarkManager.getInstance().createWebLink(2000,"porn.com","db.com","ola");
+        bookMarks[0][1]= BookmarkManager.getInstance().createWebLink(2001,"facebook.com","fb.com","kia hala hai");
+        bookMarks[0][2]= BookmarkManager.getInstance().createWebLink(2020,"facebook.com","fb.com","kia hala hai");
+        bookMarks[0][3]= BookmarkManager.getInstance().createWebLink(2005,"facebook.com","fb.com","kia hala hai");
+        bookMarks[0][4]= BookmarkManager.getInstance().createWebLink(2008,"facebook.com","fb.com","kia hala hai");
     }
     private static void loadMovies(){
         bookMarks[1][0] = BookmarkManager.getInstance().createMovie(2002,new String[]{"me"}, new String[]{"me"},MovieGenre.COMEDY.toString(),9.9);
