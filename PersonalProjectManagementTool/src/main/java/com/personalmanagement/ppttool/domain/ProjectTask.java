@@ -19,7 +19,6 @@ public class ProjectTask {
 
     @NotEmpty(message = "please include a summary")
     private String summary;
-
     private String acceptanceCriteria;
     private ProjectStatus status;
     private Integer priority;

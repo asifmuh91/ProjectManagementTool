@@ -9,17 +9,17 @@ function AddProject(props) {
   const [inputs, setInputs] = useState({});
   const [errors, setErrors] = useState({});
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
     }
     props.createProject(inputs, props.history);
   };
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     event.persist();
-    setInputs(inputs => ({
+    setInputs((inputs) => ({
       ...inputs,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     }));
   };
 
@@ -43,7 +43,7 @@ function AddProject(props) {
                 <Form.Control
                   type="text"
                   className={classnames("form-control form-control-lg", {
-                    "is-invalid": errors.projectName
+                    "is-invalid": errors.projectName,
                   })}
                   placeholder="Project Name"
                   size="lg"
@@ -59,7 +59,7 @@ function AddProject(props) {
                 <Form.Control
                   type="text"
                   className={classnames("form-control form-control-lg", {
-                    "is-invalid": errors.projectIdentifier
+                    "is-invalid": errors.projectIdentifier,
                   })}
                   placeholder="Unique Project ID"
                   size="lg"
@@ -77,7 +77,7 @@ function AddProject(props) {
                 <Form.Control
                   as="textarea"
                   className={classnames("form-control form-control-lg", {
-                    "is-invalid": errors.description
+                    "is-invalid": errors.description,
                   })}
                   placeholder="Project Description"
                   size="lg"
@@ -126,11 +126,11 @@ function AddProject(props) {
 
 AddProject.propTypes = {
   createProject: PropTypes.func.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
-  errors: state.errors
+const mapStateToProps = (state) => ({
+  errors: state.errors,
 });
 
 export default connect(mapStateToProps, { createProject })(AddProject);

@@ -41,6 +41,7 @@ public class View {
         }
     }
 
+    //TODO: below methods similar user input
     private static boolean getShareDecision() {
         return Math.random() < 0.5;
     }

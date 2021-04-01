@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -65,5 +66,6 @@ public class BacklogController {
         projectTaskService.deleteProjectTaskByProjectTaskId(backlog_id,pt_id);
         return new ResponseEntity<String>("Task id "+pt_id+"of project"+backlog_id+"has succesfully been deleted",HttpStatus.OK);
 
+        }
+
     }
-}

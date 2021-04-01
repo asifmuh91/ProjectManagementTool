@@ -25,8 +25,10 @@ export default function (state = initialState, action) {
     case DELETE_PROJECT_TASK:
       return {
         ...state,
+        //todo
       };
 
     default:
+      return state;
   }
 }

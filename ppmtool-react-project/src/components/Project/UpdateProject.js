@@ -22,15 +22,15 @@ function UpdateProject(props) {
     setInput(props.project);
   }, [props]);
 
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     event.persist();
-    setInput(inputs => ({
+    setInput((inputs) => ({
       ...inputs,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     }));
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
     }
@@ -49,7 +49,7 @@ function UpdateProject(props) {
                 <Form.Control
                   type="text"
                   className={classnames("form-control form-control-lg", {
-                    "is-invalid": errors.projectName
+                    "is-invalid": errors.projectName,
                   })}
                   placeholder="Project Name"
                   size="lg"
@@ -78,7 +78,7 @@ function UpdateProject(props) {
                 <Form.Control
                   as="textarea"
                   className={classnames("form-control form-control-lg", {
-                    "is-invalid": errors.description
+                    "is-invalid": errors.description,
                   })}
                   placeholder="Project Description"
                   size="lg"
@@ -129,12 +129,12 @@ UpdateProject.propTypes = {
   getProject: PropTypes.func.isRequired,
   createProject: PropTypes.func.isRequired,
   project: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   project: state.project.project,
-  errors: state.errors
+  errors: state.errors,
 });
 
 export default connect(mapStateToProps, { getProject, createProject })(

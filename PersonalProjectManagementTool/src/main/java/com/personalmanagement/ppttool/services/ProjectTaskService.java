@@ -8,12 +8,16 @@ import com.personalmanagement.ppttool.exceptions.ProjectNotFoundException;
 import com.personalmanagement.ppttool.repositories.BacklogRepository;
 import com.personalmanagement.ppttool.repositories.ProjectRepository;
 import com.personalmanagement.ppttool.repositories.ProjectTaskRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
+
 @Service
+@Slf4j
 public class ProjectTaskService {
 
     @Autowired
@@ -33,7 +37,6 @@ public class ProjectTaskService {
         }
         projectTask.setBacklog(backlog);
         if(pt_id==null) {
-
             Integer backLogSequence = backlog.getPTSequence();
             ++backLogSequence;
             backlog.setPTSequence(backLogSequence);
@@ -47,12 +50,13 @@ public class ProjectTaskService {
             if (projectTask.getStatus() == null) {
                 projectTask.setStatus(ProjectStatus.TO_DO);
             }
+            return projectTaskRepository.save(projectTask);
         }
 
         if(findPTByProjectSequence(projectIdentifier,pt_id)==null){
             throw new ProjectNotFoundException("This pt_id " +pt_id+" does not exist in project id "+projectIdentifier);
         }
-            return projectTaskRepository.save(projectTask);
+        return projectTaskRepository.save(projectTask);
         }
 
 

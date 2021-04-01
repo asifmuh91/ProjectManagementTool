@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import { deleteProject } from "../../actions/projectActions";
 
 function ProjectItem(props) {
-  const onDeleteClick = id => {
+  const onDeleteClick = (id) => {
     props.deleteProject(id);
   };
   return (
@@ -23,14 +23,16 @@ function ProjectItem(props) {
           </Col>
           <Col className="col-md-4">
             <ListGroup>
-              <ListGroup.Item
-                action
-                variant="success"
-                className="fa fa-flag-checkered pr-1"
-              >
-                {"  "}
-                Project Board
-              </ListGroup.Item>
+              <Link to={`/projectBoard/${props.project.projectIdentifier}`}>
+                <ListGroup.Item
+                  action
+                  variant="success"
+                  className="fa fa-flag-checkered pr-1"
+                >
+                  {"  "}
+                  Project Board
+                </ListGroup.Item>
+              </Link>
             </ListGroup>
             <ListGroup>
               <Link to={`/updateProject/${props.project.projectIdentifier}`}>
@@ -63,7 +65,7 @@ function ProjectItem(props) {
 }
 
 ProjectItem.propTypes = {
-  deleteProject: PropTypes.func.isRequired
+  deleteProject: PropTypes.func.isRequired,
 };
 
 export default connect(null, { deleteProject })(ProjectItem);
