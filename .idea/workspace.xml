@@ -2,47 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eb76e06-7954-43a4-a6a3-625c6cea2efb" name="Default Changelist" comment="New commit">
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/.idea/ProjectManagementBackEnd.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/Personal Project Management.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-data-commons/2.2.4.RELEASE/spring-data-commons-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-data-jpa/2.2.4.RELEASE/spring-data-jpa-2.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-acl/5.2.1.RELEASE/spring-security-acl-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-aspects/5.2.1.RELEASE/spring-security-aspects-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-cas/5.2.1.RELEASE/spring-security-cas-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-crypto/5.2.1.RELEASE/spring-security-crypto-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-ldap/5.2.1.RELEASE/spring-security-ldap-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-messaging/5.2.1.RELEASE/spring-security-messaging-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-oauth2-core/5.2.1.RELEASE/spring-security-oauth2-core-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-oauth2-resource-server/5.2.1.RELEASE/spring-security-oauth2-resource-server-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-openid/5.2.1.RELEASE/spring-security-openid-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-remoting/5.2.1.RELEASE/spring-security-remoting-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-taglibs/5.2.1.RELEASE/spring-security-taglibs-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-test/5.2.1.RELEASE/spring-security-test-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectManagementBackEnd/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/Util/ProjectStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/controllers/BacklogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/domain/Backlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/domain/ProjectTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/repositories/BacklogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/repositories/ProjectTaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/services/ProjectTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalProjectManagementTool/src/main/java/com/personalmanagement/ppttool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/actions/projectActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/AddProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/AddProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/ProjectItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/UpdateProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/components/Project/UpdateProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/reducers/backlogReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/reducers/backlogReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-project/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-project/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +34,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -81,6 +56,8 @@
       <updated>1584297803611</updated>
       <workItem from="1584297804984" duration="252000" />
       <workItem from="1584299568598" duration="18000" />
+      <workItem from="1586614136464" duration="503000" />
+      <workItem from="1586790707595" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <created>1584297903576</created>
@@ -93,7 +70,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -101,6 +78,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="New commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="553" y="347" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586614412554">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="553" y="347" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1586614412554" />
     <state x="245" y="57" key="CommitChangelistDialog2" timestamp="1584297958501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
